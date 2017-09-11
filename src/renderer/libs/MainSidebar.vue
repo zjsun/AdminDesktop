@@ -33,17 +33,22 @@
             <ul class="sidebar-menu" data-widget="tree">
                 <li class="header">HEADER</li>
                 <!-- Optionally, you can add icons to the links -->
-                <li class="active"><a href="#"><i class="fa fa-link"></i> <span>Link</span></a></li>
-                <li><a href="#"><i class="fa fa-link"></i> <span>Another Link</span></a></li>
+                <router-link tag="li" to="/">
+                    <a><i class="fa fa-link"></i> <span>Link</span></a>
+                </router-link>
+                <router-link tag="li" to="/link2">
+                    <a><i class="fa fa-link"></i> <span>Another Link</span></a>
+                </router-link>
                 <li class="treeview">
-                    <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>
+                    <a href="#">
+                        <i class="fa fa-link"></i> <span>Multilevel</span>
                         <span class="pull-right-container">
-                <i class="fa fa-angle-left pull-right"></i>
-              </span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="#">Link in level 2</a></li>
-                        <li><a href="#">Link in level 2</a></li>
+                        <router-link tag="li" to="/link21"><a>Link in level 2</a></router-link>
+                        <router-link tag="li" to="/link22"><a>Link in level 2</a></router-link>
                     </ul>
                 </li>
             </ul>

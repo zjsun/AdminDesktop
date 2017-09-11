@@ -4,7 +4,7 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Page Header
+                {{$route.meta.title}}
                 <small>Optional description</small>
             </h1>
             <ol class="breadcrumb">
@@ -19,6 +19,7 @@
             <!--------------------------
               | Your Page Content Here |
               -------------------------->
+            {{$route.name}}({{$route.path}})
 
         </section>
         <!-- /.content -->
