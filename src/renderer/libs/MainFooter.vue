@@ -3,10 +3,10 @@
     <footer class="main-footer">
         <!-- To the right -->
         <div class="pull-right hidden-xs">
-            Anything you want
+            版本：3.1.6@20170911
         </div>
         <!-- Default to the left -->
-        <strong>Copyright &copy; 2017 <a href="#">Company</a>.</strong> All rights reserved.
+        <strong>版权所有 &copy; 2016~2017 <a>江苏xx科技股份有限公司</a>.</strong>
     </footer>
 </template>
 

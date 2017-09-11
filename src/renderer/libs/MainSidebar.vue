@@ -11,16 +11,16 @@
                     <img :src="sideAvatar" class="img-circle" alt="User Image">
                 </div>
                 <div class="pull-left info">
-                    <p>Alexander Pierce</p>
+                    <p>超级管理员</p>
                     <!-- Status -->
-                    <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+                    <a href="#"><i class="fa fa-circle text-success"></i> 在线</a>
                 </div>
             </div>
 
             <!-- search form (Optional) -->
             <form action="#" method="get" class="sidebar-form">
                 <div class="input-group">
-                    <input type="text" name="q" class="form-control" placeholder="Search...">
+                    <input type="text" name="q" class="form-control" placeholder="输入关键字搜索">
                     <span class="input-group-btn">
               <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
               </button>
@@ -31,24 +31,24 @@
 
             <!-- Sidebar Menu -->
             <ul class="sidebar-menu" data-widget="tree">
-                <li class="header">HEADER</li>
+                <li class="header">日常</li>
                 <!-- Optionally, you can add icons to the links -->
                 <router-link tag="li" to="/">
-                    <a><i class="fa fa-link"></i> <span>Link</span></a>
+                    <a><i class="fa fa-link"></i> <span>工作台</span></a>
                 </router-link>
                 <router-link tag="li" to="/link2">
-                    <a><i class="fa fa-link"></i> <span>Another Link</span></a>
+                    <a><i class="fa fa-link"></i> <span>链接2</span></a>
                 </router-link>
                 <li class="treeview">
                     <a href="#">
-                        <i class="fa fa-link"></i> <span>Multilevel</span>
+                        <i class="fa fa-link"></i> <span>多级</span>
                         <span class="pull-right-container">
                             <i class="fa fa-angle-left pull-right"></i>
                         </span>
                     </a>
                     <ul class="treeview-menu">
-                        <router-link tag="li" to="/link21"><a>Link in level 2</a></router-link>
-                        <router-link tag="li" to="/link22"><a>Link in level 2</a></router-link>
+                        <router-link tag="li" to="/link21"><a>链接21</a></router-link>
+                        <router-link tag="li" to="/link22"><a>链接22</a></router-link>
                     </ul>
                 </li>
             </ul>

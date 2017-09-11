@@ -5,11 +5,11 @@
         <section class="content-header">
             <h1>
                 {{$route.meta.title}}
-                <small>Optional description</small>
+                <small>可选描述</small>
             </h1>
             <ol class="breadcrumb">
-                <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
-                <li class="active">Here</li>
+                <li><a href="#"><i class="fa fa-dashboard"></i> 首页</a></li>
+                <li class="active">这里</li>
             </ol>
         </section>
 
