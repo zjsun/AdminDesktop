@@ -1,6 +1,6 @@
 # Admin-Desktop
 
-> AdminLTE with electron-vue
+> [AdminLTE](https://github.com/almasaeed2010/AdminLTE) with [electron-vue](https://github.com/SimulatedGREG/electron-vue)
 
 #### Build Setup
 

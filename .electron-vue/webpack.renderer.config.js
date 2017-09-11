@@ -57,6 +57,7 @@ let rendererConfig = {
           options: {
             extractCSS: process.env.NODE_ENV === 'production',
             loaders: {
+              less: 'vue-style-loader!css-loader!less-loader',
               sass: 'vue-style-loader!css-loader!sass-loader?indentedSyntax=1',
               scss: 'vue-style-loader!css-loader!sass-loader'
             }
@@ -112,7 +113,11 @@ let rendererConfig = {
         : false
     }),
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoEmitOnErrorsPlugin()
+    new webpack.NoEmitOnErrorsPlugin(),
+    new webpack.ProvidePlugin({
+        jQuery: 'jquery',
+        $: 'jquery'
+    })
   ],
   output: {
     filename: '[name].js',
@@ -122,7 +127,9 @@ let rendererConfig = {
   resolve: {
     alias: {
       '@': path.join(__dirname, '../src/renderer'),
-      'vue$': 'vue/dist/vue.esm.js'
+      'vue$': 'vue/dist/vue.esm.js',
+      'jQuery':'jquery',
+      '$': 'jquery'
     },
     extensions: ['.js', '.vue', '.json', '.css', '.node']
   },
