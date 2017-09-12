@@ -34,7 +34,7 @@
                                         <a href="#">
                                             <div class="pull-left">
                                                 <!-- User Image -->
-                                                <img :src="messageAvatar" class="img-circle" alt="User Image">
+                                                <img :src="avatar" class="img-circle" alt="User Image">
                                             </div>
                                             <!-- Message title and timestamp -->
                                             <h4>
@@ -119,14 +119,14 @@
                         <!-- Menu Toggle Button -->
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             <!-- The user image in the navbar-->
-                            <img :src="userAvatar" class="user-image" alt="User Image">
+                            <img :src="avatar" class="user-image" alt="User Image">
                             <!-- hidden-xs hides the username on small devices so only the image appears. -->
                             <span class="hidden-xs">超级管理员</span>
                         </a>
                         <ul class="dropdown-menu">
                             <!-- The user image in the menu -->
                             <li class="user-header">
-                                <img :src="userHeader" class="img-circle" alt="User Image">
+                                <img :src="avatar" class="img-circle" alt="User Image">
 
                                 <p>
                                     超级管理员 - 管理者
@@ -174,9 +174,7 @@
         name: 'MainHeader',
         data() {
             return {
-                messageAvatar: require('admin-lte/dist/img/user2-160x160.jpg'),
-                userAvatar: require('admin-lte/dist/img/user2-160x160.jpg'),
-                userHeader: require('admin-lte/dist/img/user2-160x160.jpg')
+                avatar: require('admin-lte/dist/img/avatar5.png')
             }
         }
     }

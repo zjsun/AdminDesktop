@@ -6,7 +6,7 @@
             版本：3.1.6@20170911
         </div>
         <!-- Default to the left -->
-        <strong>版权所有 &copy; 2016~2017 <a>江苏xx科技股份有限公司</a>.</strong>
+        <strong>&copy; 2016~2017 <a>Xxx, Inc.</a></strong>
     </footer>
 </template>
 

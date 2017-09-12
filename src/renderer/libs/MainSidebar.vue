@@ -6,16 +6,16 @@
         <section class="sidebar">
 
             <!-- Sidebar user panel (optional) -->
-            <div class="user-panel">
+            <!--<div class="user-panel">
                 <div class="pull-left image">
-                    <img :src="sideAvatar" class="img-circle" alt="User Image">
+                    <img :src="avatar" class="img-circle" alt="User Image">
                 </div>
                 <div class="pull-left info">
                     <p>超级管理员</p>
-                    <!-- Status -->
+                    &lt;!&ndash; Status &ndash;&gt;
                     <a href="#"><i class="fa fa-circle text-success"></i> 在线</a>
                 </div>
-            </div>
+            </div>-->
 
             <!-- search form (Optional) -->
             <form action="#" method="get" class="sidebar-form">
@@ -34,7 +34,7 @@
                 <li class="header">日常</li>
                 <!-- Optionally, you can add icons to the links -->
                 <router-link tag="li" to="/">
-                    <a><i class="fa fa-link"></i> <span>工作台</span></a>
+                    <a><i class="fa fa-dashboard"></i> <span>工作台</span></a>
                 </router-link>
                 <router-link tag="li" to="/link2">
                     <a><i class="fa fa-link"></i> <span>链接2</span></a>
@@ -63,7 +63,7 @@
         name: 'MainSidebar',
         data(){
             return {
-                sideAvatar: require('admin-lte/dist/img/user2-160x160.jpg')
+                avatar: require('admin-lte/dist/img/avatar5.png')
             }
         }
     }
