@@ -1,5 +1,7 @@
-import Vue from "vue";
-import Router from "vue-router";
+import Vue from "vue"
+import Router from "vue-router"
+
+import Home from "../views/Home.vue"
 
 Vue.use(Router)
 
@@ -9,7 +11,7 @@ export default new Router({
         {
             path: '/',
             name: 'Home',
-            component: require('@/views/Home'),
+            component: Home,
             meta: {
                 title: '首页'
             }
@@ -17,7 +19,7 @@ export default new Router({
         {
             path: '/link2',
             name: 'Link2',
-            component: require('@/views/Home'),
+            component: Home,
             meta: {
                 title: '链接2'
             }
@@ -25,7 +27,7 @@ export default new Router({
         {
             path: '/link21',
             name: 'Link21',
-            component: require('@/views/Home'),
+            component: Home,
             meta: {
                 title: '链接21'
             }
@@ -33,7 +35,7 @@ export default new Router({
         {
             path: '/link22',
             name: 'Link22',
-            component: require('@/views/Home'),
+            component: Home,
             meta: {
                 title: '链接22'
             }

@@ -2,7 +2,9 @@
     <div class="wrapper">
         <MainHeader></MainHeader>
         <MainSidebar></MainSidebar>
-        <router-view></router-view>
+        <transition name="fade" mode="out-in">
+            <router-view></router-view>
+        </transition>
         <MainFooter></MainFooter>
         <MainSetting></MainSetting>
     </div>
