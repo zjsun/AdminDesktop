@@ -31,10 +31,10 @@
 
             <!-- Sidebar Menu -->
             <ul class="sidebar-menu" data-widget="tree">
-                <li class="header">日常</li>
+                <li class="header">工作台</li>
                 <!-- Optionally, you can add icons to the links -->
                 <router-link tag="li" to="/">
-                    <a><i class="fa fa-dashboard"></i> <span>工作台</span></a>
+                    <a><i class="fa fa-dashboard"></i> <span>桌面</span></a>
                 </router-link>
                 <router-link tag="li" to="/link2">
                     <a><i class="fa fa-link"></i> <span>链接2</span></a>
